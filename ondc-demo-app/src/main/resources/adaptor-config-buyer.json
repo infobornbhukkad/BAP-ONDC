@@ -1,0 +1,122 @@
+[
+	{
+		"subscriber_id": "bap.bornbhukkad.in",
+		"subscriber_url": "https://buyer.bornbhukkad.info/buyer/adaptor/",
+		"beckn_gateway":"https://pilot-gateway-1.beckn.nsdl.co.in",		
+		"keyid": "181",
+		"disable_adaptor_calls": "false",
+		"beckn_ttl": "600000",		
+		"version": "1.0.0",
+		"buyerappfinderfee_amount": "3",						
+		"whitelist_baps": "https://api-testing.phonepe.com/apis/osmos/logistics/,sandbox.hitbyseo.com/delivery/bap",
+		"signing": {
+			"certificate_used": false,
+			"certificate_type": "",
+			"certificate_alias": "",
+			"certificate_path": "",
+			"certificate_pwd": "",
+			"private_key": "yKJvffqrupalBGz8fnMrGdpZ1dN2UfjIbVVVC5d7HDs="
+		},
+		"api": [
+			{
+				"name": "search",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/search",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "select",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/select",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "cancel",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/cancel",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "confirm",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/confirm",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "init",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/init",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "rating",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/rating",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "status",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/status",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "support",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/support",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "track",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/track",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "update",
+				"http_entity_endpoint": "http://localhost:8089/seller/mock/update",
+				"http_timeout": 8000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": true
+			},
+			{
+				"name": "lookup",
+				"http_entity_endpoint": "https://pilot-gateway-1.beckn.nsdl.co.in/lookup",
+				"http_timeout": 9000,
+				"http_retry_count": 0,
+				"header_validity": 600000,
+				"header_authentication": true,
+				"set_authorization_header": false
+			}
+		]
+	}
+]

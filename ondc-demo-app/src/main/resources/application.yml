@@ -1,0 +1,29 @@
+server:
+  ssl:
+    key-store: classpath:keystore.pfx
+    key-store-password: password
+    key-store-type: PKCS12
+    key-alias: bornbhukkad
+    key-password: password
+  port: 443
+  
+ehcache:
+  cacheregion:
+    beckn-api:
+      common-cache:
+        timetolive: 1800
+        entrycount: 1000
+      own-cache:
+        timetolive: 0
+        entrycount: 9        
+      lookup-cache:
+        timetolive: 1800
+        entrycount: 1000
+beckn:
+  persistence:
+    type: http
+    audit-schema-error: true
+    file-path: ./
+  entity:
+    type: buyer
+debug: true

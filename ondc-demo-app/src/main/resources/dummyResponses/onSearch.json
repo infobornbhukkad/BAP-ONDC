@@ -1,0 +1,48 @@
+{
+  "catalog": {
+    "bpp/descriptor": {
+      "name": "Flipkart Ekart"
+    },
+    "bpp/providers": [
+      {
+        "id": "flipkart.logistics.test",
+        "descriptor": {
+          "name": "Flipkart Ekart"
+        },
+        "categories": [
+          {
+            "id": "standard-delivery",
+            "descriptor": {
+              "name": "Standard Delivery"
+            }
+          }
+        ],
+        "items": [
+          {
+            "id": "standard-document-delivery",
+            "descriptor": {
+              "name": "Standard Document Delivery",
+              "images": [
+                "https://ekartlogistics.com/assets/images/ekWhiteLogo.png"
+              ]
+            },
+            "price": {
+              "currency": "INR",
+              "value": 100,
+              "estimated_value": 0,
+              "computed_value": 0,
+              "listed_value": 0,
+              "offered_value": 0,
+              "minimum_value": 0,
+              "maximum_value": 0
+            },
+            "category_id": "standard-delivery",
+            "matched": true,
+            "related": false,
+            "recommended": false
+          }
+        ]
+      }
+    ]
+  }
+}
